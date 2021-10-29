@@ -1,0 +1,23 @@
+.advantage-container{
+    background-color: rgb(229, 233, 229);
+}
+.advantage-card{
+    box-shadow: 2px 2px 3px rgb(211, 210, 210);
+    transition:transform .5s ;
+}
+.advantage-card:hover{
+    transform:scale(1.050);
+}
+.advantage-icon{
+    font-size: 55px;
+    padding: 15px;
+    color: #0ab193;
+    text-shadow: 10px 15px 15 rgb(0, 0, 0);
+
+}
+.advantage-title{
+    color: #29293a;
+}
+.advantage-text{
+    color: rgb(82, 82, 82);
+}

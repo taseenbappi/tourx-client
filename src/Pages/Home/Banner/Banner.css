@@ -1,0 +1,18 @@
+.banner{
+    background-image: url('../../../images//banner//banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    width: 100%;
+    height: 80vh;
+    
+}
+.banner-title{
+    font-family: 'Corben', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    line-height: 100px;
+    font-weight: 600;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
