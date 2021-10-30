@@ -18,6 +18,7 @@ const OrderDetails = () => {
             .then(res => {
                 if (res.data.insertedId) {
                     alert("Your Order successfully Submited");
+                    reset();
                 }
             })
             .catch(function (error) {
@@ -35,9 +36,9 @@ const OrderDetails = () => {
 
 
     return (
-        <div className="container-fluid order-container py-5">
+        <div className="container-fluid order-container py-3">
             <div className="order-details-txt">
-                <h1 className="py-3">Order Details</h1>
+                <h1 className="p-3">Order Details</h1>
             </div>
             <div className="row container m-auto">
 
@@ -49,14 +50,14 @@ const OrderDetails = () => {
 
                 </div>
 
-                <div className="col-12 col-lg-4 col-md-4 col-sm-12 p-3 bg-light p-5 shadow-sm rounded">
+                <div className="col-12 col-lg-4 col-md-4 col-sm-12 p-3 bg-light shadow rounded border-top border-5 border-success">
 
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <h3 className="p-3">Book This Package</h3>
-                        <input type="text" {...register("orderName")} className="form-control m-2 p-3" value={tourPackageItem.title} required />
+                        <input type="text" {...register("orderName")} className="form-control m-2 p-3" required placeholder="Please Enter Your Package name" />
                         <input  {...register("name")} className="form-control m-2 p-3" value={user.displayName} />
                         <input type="email" {...register("email")} className="form-control m-2 p-3 " value={user?.email} placeholder="E-mail" />
-                        <input type="number" {...register("packageCost")} className="form-control m-2 p-3 " placeholder="Package Cost" value={tourPackageItem.cost} required />
+                        <input type="number" {...register("packageCost")} className="form-control m-2 p-3 " placeholder="Package Cost" required />
                         <input type="number" {...register("phone")} className="form-control m-2 p-3 " placeholder="Phone Number" />
                         <textarea type="text" {...register("Massage")} className="form-control p-3 m-2" placeholder="Massage" />
 

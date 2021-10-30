@@ -1,0 +1,7 @@
+.order-card{
+    box-shadow: 2px 2px 3px rgb(211, 210, 210);
+    transition:transform .5s ;
+}
+.order-card:hover{
+    transform:scale(1.050);
+}

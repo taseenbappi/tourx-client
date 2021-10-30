@@ -17,7 +17,7 @@ const Advantages = () => {
                             <i className="fas fa-wallet advantage-icon"></i>
                             <div className="card-body">
                                 <h5 className="card-title advantage-title">Lowest Prices</h5>
-                                <p className="card-text advantage-text">Skyline offers its clients an affordable pricing policy.</p>
+                                <p className="card-text advantage-text">TourX offers its clients an affordable pricing policy.</p>
                             </div>
 
                         </div>
