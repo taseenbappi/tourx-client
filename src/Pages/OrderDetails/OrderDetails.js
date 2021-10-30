@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useForm } from "react-hook-form";
 import useAuth from '../../Hooks/useAuth';
 import './OrderDetails.css';
@@ -7,13 +7,26 @@ import img from "../../images/tour-package/beaches-in-thailand.jpg"
 const OrderDetails = () => {
     const { user } = useAuth();
     const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+
+    const packageDetailsHandler = (id) => {
+
+        const url = `http://localhost:5000/packages/${id}`;
+        fetch(url)
+            .then(res => res.json())
+            .then(data => console.log(data))
+    }
+
+
+
+    const onSubmit = data => { console.log(data) };
+
     return (
         <div className="container-fluid order-container">
             <div className="order-details-txt">
                 <h1 className="p-3">Order Details</h1>
             </div>
             <div className="row container">
+
                 <div className="col-12 col-lg-8 col-md-8 col-sm-12">
                     <img src={img} alt="" className="img-fluid" />
                     <h2>Title</h2>
@@ -23,6 +36,7 @@ const OrderDetails = () => {
 
                 </div>
                 <div className="col-12 col-lg-4 col-md-4 col-sm-12 p-3 bg-light p-5 shadow-sm rounded">
+
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <input {...register("name")} className="form-control m-2 p-3" value={user.displayName} />
                         <input type="email" {...register("email")} className="form-control m-2 p-3 " value={user?.email} placeholder="E-mail" />

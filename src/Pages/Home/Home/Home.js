@@ -7,7 +7,7 @@ import TourPackage from '../TourPackage/TourPackage';
 
 const Home = () => {
     return (
-        <div className="">
+        <div >
             <Banner></Banner>
             <TourPackage></TourPackage>
             <Advantages></Advantages>

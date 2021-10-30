@@ -14,7 +14,7 @@ const Package = (props) => {
                         <h4>Cost:${cost}</h4>
                     </div>
                     <div className="card-footer p-2">
-                        <Link to="/orderDetails"><button className='btn btn-primary w-100'>Book Now</button></Link>
+                        <Link to="/orderDetails"><button className='btn btn-primary w-100' >Book Now</button></Link>
                     </div>
                 </div>
             </div>

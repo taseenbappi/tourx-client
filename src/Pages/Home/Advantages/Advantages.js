@@ -11,7 +11,7 @@ const Advantages = () => {
                         <br /> provide. Here are other reasons to book tours at Skyline.</p>
                 </div>
 
-                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 py-5">
+                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 py-5 container">
                     <div className="col">
                         <div className="card advantage-card h-100">
                             <i className="fas fa-wallet advantage-icon"></i>

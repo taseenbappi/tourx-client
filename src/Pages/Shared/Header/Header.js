@@ -11,10 +11,10 @@ const Header = () => {
     const { user, logOut } = useAuth();
     console.log(user);
     return (
-        <div>
-            <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className='shadow-sm'>
+        <div className="">
+            <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className='shadow-sm container-fluid'>
                 <Container fluid>
-                    <Navbar.Brand to="#home"><img src={logo} alt="" /></Navbar.Brand>
+                    <Navbar.Brand to="#home"><img src={logo} alt="" className="img-fluid" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto fw-bolder">

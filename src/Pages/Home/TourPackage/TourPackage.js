@@ -4,9 +4,9 @@ import Package from '../Package/Package';
 import './TourPakage.css';
 
 const TourPackage = () => {
-    const [packages, setPackages] = usePackage();
+    const [packages] = usePackage();
     return (
-        <div className="packages-container py-3 container-fluid bg-light">
+        <div className="container-fluid packages-container py-3  bg-light">
             <div className="py-5">
                 <p className="fw-bolder text-danger">FEATURED TOURS</p>
                 <h3 className="package-header">Select Your Best Package For Your Travel</h3>

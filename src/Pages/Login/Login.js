@@ -17,6 +17,7 @@ const Login = () => {
                 myHistory.push(redirect_uri);
                 console.log(user);
 
+
             }).catch((error) => {
                 // Handle Errors here.
                 // const errorCode = error.code;
