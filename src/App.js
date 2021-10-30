@@ -24,7 +24,7 @@ function App() {
             <Route path='/login'>
               <Login></Login>
             </Route>
-            <PrivateRoute path='/orderDetails'>
+            <PrivateRoute path='/orderDetails/:pakcageId'>
               <OrderDetails></OrderDetails>
             </PrivateRoute>
           </Switch>
