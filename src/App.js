@@ -3,8 +3,10 @@ import './App.css';
 import AuthProvider from './context/AuthProvider';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login';
+import OrderDetails from './Pages/OrderDetails/OrderDetails';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -22,6 +24,9 @@ function App() {
             <Route path='/login'>
               <Login></Login>
             </Route>
+            <PrivateRoute path='/orderDetails'>
+              <OrderDetails></OrderDetails>
+            </PrivateRoute>
           </Switch>
           <Footer></Footer>
         </BrowserRouter>
