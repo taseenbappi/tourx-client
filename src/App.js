@@ -11,6 +11,7 @@ import OrderDetails from './Pages/OrderDetails/OrderDetails';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import NotFound from './Pages/Shared/NotFound/NotFound';
 
 function App() {
   return (
@@ -43,6 +44,9 @@ function App() {
             <PrivateRoute path='/orderDetails/:pakcageId'>
               <OrderDetails></OrderDetails>
             </PrivateRoute>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
           </Switch>
           <Footer></Footer>
         </BrowserRouter>

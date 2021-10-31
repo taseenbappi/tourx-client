@@ -7,6 +7,7 @@ const ManageOrder = () => {
     return (
         <div className="bg-light container-fluid">
             <h1>Order Manage</h1>
+            <hr className="w-25 m-auto" />
             <div className="row row-cols-1 row-cols-md-3 g-4 container m-auto">
                 {
                     order.map(item => <Order

@@ -38,14 +38,14 @@ const OrderDetails = () => {
     return (
         <div className="container-fluid order-container py-3">
             <div className="order-details-txt">
-                <h1 className="p-3">Order Details</h1>
+                <h1 className="p-3  ">Order Details</h1>
             </div>
             <div className="row container m-auto">
 
                 <div className="col-12 col-lg-8 col-md-8 col-sm-12 text-start">
                     <img src={tourPackageItem.img} alt="" className="img-fluid pb-3" />
                     <h2>{tourPackageItem.title}</h2>
-                    <p>{tourPackageItem.description}</p>
+                    <p className="text-secondary pe-3">{tourPackageItem.description}</p>
                     <h4>Cost:$ {tourPackageItem.cost}</h4>
 
                 </div>
