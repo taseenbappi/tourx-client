@@ -14,7 +14,7 @@ const OrderDetails = () => {
 
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/placedOrder', data)
+        axios.post('https://grim-spell-05737.herokuapp.com/placedOrder', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("Your Order successfully Submited");
@@ -27,7 +27,7 @@ const OrderDetails = () => {
     };
 
     useEffect(() => {
-        const url = `http://localhost:5000/packages/${pakcageId}`;
+        const url = `https://grim-spell-05737.herokuapp.com/packages/${pakcageId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setTourPackageItem(data))

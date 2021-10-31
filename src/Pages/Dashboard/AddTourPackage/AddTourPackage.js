@@ -7,7 +7,7 @@ const AddTourPackage = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data)
-        axios.post('http://localhost:5000/addPackage', data)
+        axios.post('https://grim-spell-05737.herokuapp.com/addPackage', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("Package Added Successfully");

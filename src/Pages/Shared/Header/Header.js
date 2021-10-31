@@ -20,16 +20,14 @@ const Header = () => {
                     <Nav className="ms-auto fw-bolder">
                         <Nav.Link as={HashLink} to="/home" className="item-navi">Home</Nav.Link>
                         <Nav.Link as={HashLink} to="/home#tourPackage">Tour Package</Nav.Link>
-                        {user.displayName && <Nav.Link as={HashLink} to="/dashboard">Dashboard</Nav.Link>}
+                        {/* {user.displayName && <Nav.Link as={HashLink} to="/dashboard">Dashboard</Nav.Link>} */}
                         <NavDropdown title="Dashboard" id="collasible-nav-dropdown">
                             <NavDropdown.Item as={Link} to="/addPackage">Add Package</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/myOrder">My Order</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/manageOrder">Manage Order</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link as={HashLink} to="/home#blogs">Blogs</Nav.Link>
                         <Nav.Link as={HashLink} to="/about">About Us</Nav.Link>
                         <Nav.Link as={HashLink} to="/home#contact">Contact US</Nav.Link>
-                        <Nav.Link as={HashLink} to="/register">Register</Nav.Link>
                         {
                             user.displayName &&
                             <img src={user.photoURL} alt="" height='50' width='50' className="rounded-circle m-auto p-1" />

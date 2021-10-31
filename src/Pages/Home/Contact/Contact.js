@@ -7,7 +7,7 @@ const Contact = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data)
-        axios.post('http://localhost:5000/customerComment', data)
+        axios.post('https://grim-spell-05737.herokuapp.com/customerComment', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("Your Comment Send Successfully");

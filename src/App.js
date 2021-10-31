@@ -2,7 +2,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './context/AuthProvider';
 import AddTourPackage from './Pages/Dashboard/AddTourPackage/AddTourPackage';
-import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
+// import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import ManageOrder from './Pages/Dashboard/ManageOrder/ManageOrder';
 import MyOrders from './Pages/Dashboard/MyOrders/MyOrders';
 import Home from './Pages/Home/Home/Home';
@@ -12,6 +12,7 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import NotFound from './Pages/Shared/NotFound/NotFound';
+import About from './Pages/About/About';
 
 function App() {
   return (
@@ -26,9 +27,12 @@ function App() {
             <Route path='/home'>
               <Home></Home>
             </Route>
-            <Route path='/dashboard'>
-              <Dashboard></Dashboard>
+            <Route path='/about'>
+              <About></About>
             </Route>
+            {/* <Route path='/dashboard'>
+              <Dashboard></Dashboard>
+            </Route> */}
             <PrivateRoute path="/addPackage">
               <AddTourPackage></AddTourPackage>
             </PrivateRoute>
