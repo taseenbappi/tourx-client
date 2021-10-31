@@ -30,8 +30,8 @@ const Login = () => {
             <div className="bg-light p-5 rounded ">
                 <h4>Welcome TourX</h4>
                 <h1>Login</h1>
-                <input className="form-control  m-auto p-2 mb-3 d-inline" type="text" name="" id="" placeholder="Email" />
-                <input className="form-control  m-auto p-2 mb-3 d-inline" type="password" name="" id="" placeholder="Password" />
+                <input className="form-control  m-auto p-2 mb-3 d-inline" type="text" name="" id="email" placeholder="Email" />
+                <input className="form-control  m-auto p-2 mb-3 d-inline" type="password" name="" id="password" placeholder="Password" />
                 <input className="btn btn-primary m-auto mb-3 d-inline" type="Submit" value="Submit" />
                 <br />
                 <p>Other's Login</p>
