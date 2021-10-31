@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import useAuth from '../../Hooks/useAuth';
 import './Login.css';
 import { useHistory, useLocation } from "react-router-dom";
 
 const Login = () => {
     const { googleSignInHangler, setUser } = useAuth();
-    const [isLoading, setIsLoading] = useState(true);
     const myHistory = useHistory();
     const location = useLocation();
     const redirect_uri = location.state?.from || "/home";
